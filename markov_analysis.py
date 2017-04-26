@@ -45,9 +45,11 @@ def process_line(line, prefixLen = 2):
 def read_file(bookname):
 	fin = open(bookname)
 
-	# skip_gutenberg_header(fin)
+	if bookname == "emma.txt":
+		skip_gutenberg_header(fin)
+
 	for line in fin:
-		process_line(line, 2)
+		process_line(line, 5)
 
 	print "Total prefix : ", len(prefix_to_suffixprefix_map),  " from total %d words " % wordCount
 
@@ -69,8 +71,11 @@ def random_text(nlen = 100):
 
 
 def example_markov_analysis():
-	read_file("markov_analysis.txt")
-	read_file("structshape.txt")
-	random_text(1500)
+	# read_file("markov_analysis.txt")
+	# read_file("structshape.txt")
+	read_file("book0.txt")
+	read_file("emma.txt")
+
+	random_text(5000)
 
 example_markov_analysis()
