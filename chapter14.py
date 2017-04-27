@@ -1,5 +1,8 @@
 import os
 from os.path import join, getsize
+import subprocess
+import wc
+import urllib
 
 # for root, dirs, files in os.walk('/Users/Steven/Desktop'):
 #     print root, "consumes",
@@ -9,8 +12,8 @@ from os.path import join, getsize
 #         dirs.remove('CVS')  # don't visit CVS directories
 
 
-for root, dirs, files in os.walk('/Users/Steven/Desktop/ebooks papars'):
-	print files
+# for root, dirs, files in os.walk('/Users/Steven/Desktop/ebooks papars'):
+# 	print files
 
 """	
 Exercise 14.2. Write a function called sed that takes as arguments a pattern string,
@@ -35,4 +38,28 @@ def sed(pattern, replacestr, filein, fileout):
 		print "Something went wrong"
 
 
-sed('gif', 'pdf', 'chap14in.txt', 'chap14out.txt')
+# sed('gif', 'pdf', 'chap14in.txt', 'chap14out.txt')
+
+cmdCopy = 'cp book0.txt /Users/Steven/Desktop'
+fp = subprocess.call(cmdCopy, shell=True)
+cmdRemove = 'rm /Users/Steven/Desktop/book0.txt'
+fp = subprocess.call(cmdRemove, shell=True)
+
+print wc
+print wc.linecount('chapter14.py'), 'lines'
+
+# conn = urllib.urlopen('http://thinkpython.com/secret.html')
+conn = urllib.urlopen('http://www.uszip.com/zip/02492')
+fout = open('/Users/Steven/Desktop/tensorflow.txt', 'w')
+for line in conn:
+	line = line.strip()
+	if 'Population' in line:
+		print line
+	if 'Longitude' in line: 
+		print line
+	if 'Latitude' in line: 
+		print line
+
+	if 'Population' in line or 'Longitude' in line or 'Latitude' in line:
+		fout.write(line.strip())
+fout.close()
