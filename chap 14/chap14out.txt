@@ -1,0 +1,5 @@
+['.DS_Store', '[Arun-Kumar_S.]_Algorithmic_number_theory(BookZZ.org).pdf', '[McConnell_S.C.]_Code_complete(BookZZ.org).pdf', '[Scott_Meyers]_Effective_Modern_C++_42_Specific_W(BookZZ.org).pdf', '[Stanley_B._Lippman]_C++_Gems_Programming_Pearls_(BookZZ.org).pdf', '[Stephen_Randy_Davis]_C++_for_Dummies(BookZZ.org).pdf', 'CleanCodeHandbook_v1.0.3.pdf', 'kalman filter in maltab.pdf', 'Learn OpenCV.pdf', 'letter recognition OpenCV random forest example.pdf', 'Makefile Tutorial.pdf', 'OpenCV\xe5\x85\xa5\xe9\x97\xa8\xe6\x95\x99\xe7\xa8\x8b.pdf']
+['.DS_Store', '1~3.pdf', '4~7.pdf', '8.pdf', '9~11.pdf', 'ciml-v0_9-ch12.pdf', 'ciml-v0_9-ch13.pdf', 'ciml-v0_9-ch14.pdf', 'ciml-v0_9-ch15.pdf', 'ciml-v0_9-ch16.pdf', 'ciml-v0_9-ch17.pdf', 'ciml-v0_9-ch18.pdf', 'ciml-v0_9-ch19.pdf', 'web url.txt']
+['code.zip', 'TicV2.htm']
+['image001.pdf', 'image002.pdf', 'image003.pdf', 'image004.pdf', 'image005.pdf', 'image006.pdf', 'image007.pdf', 'image008.pdf', 'image009.pdf', 'image010.pdf', 'image011.pdf', 'image012.pdf', 'image013.pdf', 'image014.pdf', 'image015.pdf', 'image016.pdf', 'image017.pdf', 'image018.pdf']
+[Finished in 0.5s]
