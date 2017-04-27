@@ -26,7 +26,9 @@ class Point(object):
 	def __radd__(self, other):
 		return self.__add__(other)
 
-
+def print_attributes(obj):
+	for attr in obj.__dict__:
+		print attr, getattr(obj, attr)
 
 p1 = Point(3, 4)
 print 'p1 : ', p1
@@ -39,3 +41,5 @@ print 'p1 + tuple (5, 5)', p1 + (5,5)
 print 'sum([p1,p1,p2,p2]) : ', sum([p1,p1,p2,p2])
 
 print 'p2 attributes: ', p2.__dict__
+
+print_attributes(p2)
