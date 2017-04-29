@@ -18,7 +18,7 @@ class Deck(object):
 	def __init__(self):
 		self.cards = []
 		for suit in range(4):
-			for rank in range(13):
+			for rank in range(1, 14):
 				self.cards.append(Card(suit, rank))
 
 	def __str__(self):
@@ -46,6 +46,12 @@ class Deck(object):
 	def move_cards(self, hand, num):
 		for i in range(num):
 			hand.add_card(self.pop_card())
+
+	def size(self):
+		return len(self.cards)
+
+	def allCards(self):
+		return self.cards
 
 	# Exercise 18.3.
 	def deal_hands(self, numHands, numCards):
@@ -92,4 +98,4 @@ def find_defining_class(obj, method_name):
 			return ty
 
 
-main()
+# main()
