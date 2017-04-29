@@ -17,6 +17,12 @@ class Time(object):
 		s = self.time_to_int() + other.time_to_int()
 		return int_to_time(s)
 
+	# Exercise 18.1.
+	def __cmp__(self, other):
+		tself = (self.hour, self.minute, self.second)
+		tother = (other.hour, other.minute, other.second)
+		return cmp(tself, tother)
+
 	def print_time(self):
 		print '%2d:%2d:%2d' % (self.hour, self.minute, self.second)
 
