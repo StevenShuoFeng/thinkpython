@@ -135,11 +135,11 @@ if __name__ == '__main__':
     lall = []
 
     n = 10000 # number of iterations
-    n_hands = 1
+    n_hands = 10
 
     for i in range(n):
         if i%1000==0:
-            print i
+            print 'Monte Carlo i = ', i
 
         d = PokerDeck()
         l = d.shuffle_and_count(5, n_hands)
@@ -155,7 +155,7 @@ if __name__ == '__main__':
         if freq == 0:
             continue
         p = freq/total
-        print 'p(%s) = %f%% [%d/%.0f]' % (l, p*100, freq, total)
+        print 'P(%s) = %f%% [%d/%.0f]' % (l, p*100, freq, total)
 
 
 
